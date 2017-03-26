@@ -1,0 +1,196 @@
+<html>
+  <style>
+   .one
+    {
+    text-decoration: none;
+    font-weight: bold;
+    padding:10px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    color: #FAC5DA;
+    }
+    a:hover
+    { 
+     background-color:  #776475;
+    }
+    .one a:active
+    {
+      border:2px solid black;
+   
+    }
+    #log
+    {
+        background-color: #dd8bbd;
+        display: block;
+         height: 50px;
+         width: 150px;
+         float: none;
+         border-radius: 10px;
+         float: right;
+    }
+    input[type=text], select
+    {
+    width: 20%;
+    padding: 15px 15px;
+    margin: 10px 0;
+    background-color: White;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    }
+    
+    input[type=submit]
+    {
+    width: 100%;
+    background-color: #dd8bbd;
+    color: black;
+    padding: 20px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    
+    input[type=submit]:hover
+    {
+    background-color: black;
+    }
+    
+    div
+    {
+    border-radius: 20px;
+    background-color: #ed55a5;
+    padding: 50px;
+    }
+    
+    input:checked
+    {
+    height: 15px;
+    width: 15px;
+    }
+   </style>
+   <head>
+   <script>
+         function validateForm()
+          {
+           if( document.myForm.firstname.value == "" )
+            {
+             alert( "Please provide your first name!" );
+             document.myForm.firstname.focus() ;
+             return false;
+             }
+             if( document.myForm.lastname.value == "" )
+            {
+             alert( "Please provide your last name!" );
+             document.myForm.lastname.focus() ;
+             return false;
+             }
+             if( document.myForm.email.value == "" )
+            {
+             alert( "Please provide your email address!" );
+             document.myForm.email.focus() ;
+             return false;
+             }
+             if( document.myForm.password.value == "" )
+            {
+             alert( "Please provide your password!" );
+             document.myForm.password.focus() ;
+             return false;
+             }
+             return( true );
+      }
+   </script>
+  </head>
+  <body>
+    <div>
+        <a class="one" href="https://preview.c9users.io/shahadyousif/home/home%20page/Home.html">HOME </a><br><br>
+  
+       <input type="text" id="mail" name="Email" placeholder="email address">
+       <input type="text" id="pass" name="Password" placeholder="password">
+       <button id="log" onclick="window.location.href='https://preview.c9users.io/shahadyousif/home/home%20page/Home.html'" >Log In</button>
+    
+     
+       <fieldset>
+          <legend><h1>Sign Up</h1></legend>
+          <form name="myForm" action="https://preview.c9users.io/shahadyousif/home/home%20page/Home.html"
+           onsubmit="return(validateForm())">
+          <label for="fname">First Name*</label>
+           <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+         <label for="lname">Last Name*</label>
+           <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+    
+         <label for="mail">Email Address*</label>
+          <input type="text" id="mail" name="email" placeholder="beiancayousif89@gmail.com">
+    
+         <label for="password">Password*</label>
+          <input type="text" id="pass" name="password" placeholder="8 charachter"><br><br>
+    
+         <label for="gender">Choose your gender:</label><br>
+          <input type="radio" name="gender" value="male"> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other<br><br>
+    
+         <label for="program language">Choose your program language:</label><br>
+          <input type="checkbox" checked="checked" value="CSS"> CSS<br>
+         <input type="checkbox" value="JS">JavaScript<br> 
+          <input type="checkbox" value="html">HTML<br><br>
+    
+    
+         <label for="birthday">Select your birthday:</label><br>
+          <input type="text" id="year" name="Year" placeholder="Year">
+        <select>
+          <option value="Month">Month</option>
+          <option value="1">Jan</option>
+          <option value="2">Feb</option>
+          <option value="3">Mar</option>
+          <option value="4">Apr</option
+          <option value="10">May</option>
+          <option value="5">Jun</option>
+          <option value="6">Jul</option>
+          <option value="7">Aug</option>
+          <option value="8">Sep</option>
+          <option value="9">Oct</option>
+          <option value="10">Nov</option>
+          <option value="11">Dec</option>
+         </select>
+         <select>
+          <option value="Day">Day</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select><br><br>
+        <input type="submit" value="Sign UP">
+      </fieldset>
+   </form>    
+  </div>
+ </body>
+</html>
